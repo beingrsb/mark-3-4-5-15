@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono&display=swap');
+
+body{
+    margin: 0px;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Noto Sans Mono', monospace;
+}
+
+:root{
+    --primarColor : rgb(250, 95, 48);
+    --mainColor : #1a1a1d;
+    --secondColor :#c3073f;
+    --fontColor :#d3d3d3;
+    --buttonColor :#A4B3B6;
+    --heroColor :#3AAFA9;
+}
+
+*{
+    color: var(--mainColor);
+    text-decoration: none;
+}
+
+header{
+    background: #1a1a1d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+    font-size: 17px;
+    padding: 0px 50px;
+}
+
+header div{
+    display: flex;
+    align-items: center;
+}
+.logo a{
+    font-weight: 800;
+    color: var(--heroColor);
+}
+.menu li{
+    list-style-type:none;
+    padding:15px;
+}
+
+.menu ul{
+    display: flex;
+}
+
+.menu ul li a{
+    color: var(--fontColor);
+    font-weight: 400;
+}
+
+.menu ul li .activemenu{
+    font-weight: 900;
+}
+.hero{
+    margin-top: 30px;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.heroimage img{
+    width: 400px
+}
+.hero_intro {
+    text-align: center;
+}
+.hero_intro h1{
+    color: rgb(104, 103, 103);
+}
+.hero_intro span{
+    color: var(--heroColor);
+}
+.hero_intro p{
+    color: rgb(104, 103, 103);
+    font-size: 20px;
+    font-weight: 600;
+}
+.tech-stack{
+    margin-top: 35px;
+    background: rgb(241, 239, 239);
+    height: 200px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.projects a, .blogs a{
+    margin:0px 90px
+}
+.projects{
+    height: 200px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.projects a, .blogs a{
+    background: var(--buttonColor);
+    width: 100px;
+    height: 20px;
+    padding: 10px;
+    color: var(--mainColor);
+    border-radius: 10px;
+}
+
+.projects a, .blogs a:hover{
+    background-color: var(--primarColor);
+    color: var(--mainColor);
+}
+
+.blogs{
+    margin-top: 15px;
+    background: rgb(241, 239, 239);
+    height: 200px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+footer{
+    background: var(--mainColor);
+    height: 150px;
+    margin-top: 10px;
+}
+
+.touch h2{
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0px 0px 0px 0px;
+    padding-top: 15px;
+}
+.socialicons{
+    display: flex;
+    justify-content: center;
+}
+.socialicons ul i{
+    color: white;
+    font-size: 30px;
+    margin-right: 40px;
+    cursor: pointer;
+}
+
+.socialicons ul i:hover{
+    color: black;
+    transition: 0.1s;
+}
+
+footer p{
+    color: var(--fontColor);
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+}
+.projectsimages img{
+    width: 300px;
+}
+
+.projectred{
+    color: var(--buttonColor);
+    width: 100%;
+}
+.projectitems{
+    /* justify-content: center; */
+    max-width: 600px;
+    padding: 1rem 1rem;
+    margin: 1rem auto;
+}
+.projectitems ul li{
+    list-style-type:none;
+    margin-bottom: 60px;
+}
+
+.project-button a{
+    border: 1px solid var(--buttonColor);
+    padding: 8px;
+    border-radius: 5px;
+}
+.project-button a:hover{
+    background-color: var(--primarColor);
+    color: var(--mainColor);
+}
+.projectitems ul li p{
+    margin-top: -10px;
+}
+/* .buttonactive{
+    background: var(--buttonColor);
+    color: white
+} */
+.buttonactive:hover{
+    background: var(--mainColor);
+    color: var(--mainColor);
+}
+
+.blog{
+    margin: 40px 20px;
+}
+
+@media (min-width: 768px){
+    .blog{
+        margin: 40px 120px;
+    }
+    .codeline{
+        width: 500px
+    }
+}
+.author_data{
+    display: flex;
+}
+
+.author_data p{
+    margin-top: -10px;
+    margin-right: 20px;
+}
+.authorname{
+    background: rgb(250, 95, 48);
+    padding: 2px;
+    border-radius: 3px;
+    color: white;
+}
+.postdate{
+    background: blue;
+    padding: 2px;
+    border-radius: 3px;
+    color: white
+}
+.word-light{
+    color: grey;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.codeline{
+    padding: 10px;
+    background: grey;
+    color: white;
+    border-radius: 3px;
+}
+.codeline span{
+    color: white;
+    margin-left: 25px
+}
