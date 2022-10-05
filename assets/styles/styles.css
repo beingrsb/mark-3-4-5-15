@@ -20,6 +20,13 @@ body{
     color: var(--mainColor);
     text-decoration: none;
 }
+.img-git{
+    max-width: 50%;
+    max-height: auto;
+    border: 1rem solid var(--mainColor);
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
 
 header{
     background: #1a1a1d;
